@@ -26,17 +26,17 @@ devDependencies:
     specifier: 7.47.0
     version: 7.47.0(svelte@3.58.0)
   '@sentry/vite-plugin':
-    specifier: 0.5.1
-    version: 0.5.1
+    specifier: 0.6.0
+    version: 0.6.0
   '@skeletonlabs/skeleton':
     specifier: ^1.1.0
     version: 1.1.0
   '@supabase/auth-helpers-sveltekit':
     specifier: 0.9.3
-    version: 0.9.3(@supabase/supabase-js@2.15.0)(@sveltejs/kit@1.15.2)
+    version: 0.9.3(@supabase/supabase-js@2.18.0)(@sveltejs/kit@1.15.2)
   '@supabase/supabase-js':
-    specifier: 2.15.0
-    version: 2.15.0
+    specifier: 2.18.0
+    version: 2.18.0
   '@sveltejs/adapter-vercel':
     specifier: ^2.4.1
     version: 2.4.1(@sveltejs/kit@1.15.2)
@@ -1019,8 +1019,8 @@ packages:
       tslib: 1.14.1
     dev: true
 
-  /@sentry/bundler-plugin-core@0.5.1:
-    resolution: {integrity: sha512-cQQBtKUf3mpIXrxA+2+GBkqtiRdVjpH/ktALizu2I4Y5bg5T4RPvnxV8JlqZ3u9coPlWhKmZiYH5u5PRuRak+A==}
+  /@sentry/bundler-plugin-core@0.6.0:
+    resolution: {integrity: sha512-gDPBkFxiOkc525U9pxnGMI5B2DAG0+UCsNuiNgl9+AieDcPSYTwdzfGHytxDZrQgPMvIHEnTAp1VlNB+6UxUGQ==}
     engines: {node: '>= 10'}
     dependencies:
       '@sentry/cli': 2.17.0
@@ -1030,6 +1030,7 @@ packages:
       glob: 9.3.2
       magic-string: 0.27.0
       unplugin: 1.0.1
+      webpack-sources: 3.2.3
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -1144,11 +1145,11 @@ packages:
       tslib: 1.14.1
     dev: true
 
-  /@sentry/vite-plugin@0.5.1:
-    resolution: {integrity: sha512-7yrHAroPDl9P/dOyTL9/1xt2+pUKhkUpxNFYCYPN5D4FvO90GdmFbjUbYQbfy7RtQ8kEEu9hHVOpdySI5LM3CA==}
+  /@sentry/vite-plugin@0.6.0:
+    resolution: {integrity: sha512-3J1ESvbI5okGJaSWm+gTAOOIa96u4ZwfI/C3n+0HSStz3e4vGiGUh59iNyb1/2m5HFgR5OLaHNfAvlyP8GM/ew==}
     engines: {node: '>= 10'}
     dependencies:
-      '@sentry/bundler-plugin-core': 0.5.1
+      '@sentry/bundler-plugin-core': 0.6.0
     transitivePeerDependencies:
       - encoding
       - supports-color
@@ -1164,23 +1165,23 @@ packages:
       svelte: 3.58.0
     dev: true
 
-  /@supabase/auth-helpers-shared@0.3.3(@supabase/supabase-js@2.15.0):
+  /@supabase/auth-helpers-shared@0.3.3(@supabase/supabase-js@2.18.0):
     resolution: {integrity: sha512-ZwZGffApfyz9MiT3knnZoF1DMWE56H/Q0Mrsn22J9ubhss7/+e7TP3dChxxwlUYqtDmjmLV6OV8W0BANENfUew==}
     peerDependencies:
       '@supabase/supabase-js': ^2.0.4
     dependencies:
-      '@supabase/supabase-js': 2.15.0
+      '@supabase/supabase-js': 2.18.0
       js-base64: 3.7.5
     dev: true
 
-  /@supabase/auth-helpers-sveltekit@0.9.3(@supabase/supabase-js@2.15.0)(@sveltejs/kit@1.15.2):
+  /@supabase/auth-helpers-sveltekit@0.9.3(@supabase/supabase-js@2.18.0)(@sveltejs/kit@1.15.2):
     resolution: {integrity: sha512-F9ePQK6hi/4P9OKLUVfaCZ0ZLaGkyx4AZG2S/tyBmrEHEIDssbOaX3QDcOB6QFqsVx0MsWWbAkl2DOQNVJTK7g==}
     peerDependencies:
       '@supabase/supabase-js': ^2.7.1
       '@sveltejs/kit': ^1.1.0
     dependencies:
-      '@supabase/auth-helpers-shared': 0.3.3(@supabase/supabase-js@2.15.0)
-      '@supabase/supabase-js': 2.15.0
+      '@supabase/auth-helpers-shared': 0.3.3(@supabase/supabase-js@2.18.0)
+      '@supabase/supabase-js': 2.18.0
       '@sveltejs/kit': 1.15.2(svelte@3.58.0)(vite@4.2.1)
     dev: true
 
@@ -1192,8 +1193,8 @@ packages:
       - encoding
     dev: true
 
-  /@supabase/gotrue-js@2.20.1:
-    resolution: {integrity: sha512-TvXAhLpB/ghLAMNRX5Du3EAc9t0W1w9OFKFn9FNgX3mCAvyhJOni2DVdeSYas4xKbUuyMt4Mp3NDSculLtD0DA==}
+  /@supabase/gotrue-js@2.22.0:
+    resolution: {integrity: sha512-YBxg1AoMgXSFbEuamMyuJhKwscmK/eCkL8K7CenCjJJRVKfNHDYkM9F7VX9+atDDY6ejufdYz1auVfsqRrt9pQ==}
     dependencies:
       cross-fetch: 3.1.5
     transitivePeerDependencies:
@@ -1226,11 +1227,11 @@ packages:
       - encoding
     dev: true
 
-  /@supabase/supabase-js@2.15.0:
-    resolution: {integrity: sha512-gtgq8Tyb4AJoTGeUH3EISOiobdSYwUPcjV+mqL8zGMND+mfqh6l90fnxVPxepnIFXeppJh67YIFTu2bZhr6AMA==}
+  /@supabase/supabase-js@2.18.0:
+    resolution: {integrity: sha512-5hDKz6/BwTE+2Zo9oGoiolJGajpqmWwNjgqyjQcne57Pt9WL2aWyltkmYjxLEpes6yVO/9AaLtnULsK6lcWW4A==}
     dependencies:
       '@supabase/functions-js': 2.1.0
-      '@supabase/gotrue-js': 2.20.1
+      '@supabase/gotrue-js': 2.22.0
       '@supabase/postgrest-js': 1.5.0
       '@supabase/realtime-js': 2.7.2
       '@supabase/storage-js': 2.4.0
